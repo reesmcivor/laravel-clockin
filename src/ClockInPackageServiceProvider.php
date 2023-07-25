@@ -21,7 +21,7 @@ class ClockInPackageServiceProvider extends ServiceProvider
         if($this->app->runningInConsole()) {
             $migrationPath = $this->isTenancy ? 'migrations/tenant' : 'migrations';
             $this->publishes([
-                //__DIR__ . '/../database/migrations/tenant' => database_path($migrationPath),
+                __DIR__ . '/../database/migrations/tenant' => database_path($migrationPath),
                 __DIR__ . '/../publish/tests' => base_path('tests/ClockIn'),
                 //__DIR__ . '/../publish/config' => base_path('config'),
             ], 'reesmcivor-clockin');
