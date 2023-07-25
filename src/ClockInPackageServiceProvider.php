@@ -3,7 +3,7 @@
 namespace ReesMcIvor\ClockIn;
 
 use Illuminate\Support\ServiceProvider;
-class FormsPackageServiceProvider extends ServiceProvider
+class ClockInPackageServiceProvider extends ServiceProvider
 {
 
     protected $namespace = 'ReesMcIvor\ClockIn\Http\Controllers';
